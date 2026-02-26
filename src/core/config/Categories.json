@@ -223,6 +223,7 @@
             "Multiply",
             "Divide",
             "Extended GCD",
+            "Modular Inverse",
             "Mean",
             "Median",
             "Standard Deviation",
