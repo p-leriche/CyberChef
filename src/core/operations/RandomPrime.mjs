@@ -88,7 +88,7 @@ class GeneratePrime extends Operation {
             "- <b>Standard (7 rounds):</b> Probability of composite approx 1 in 16,000)<br><br>" +
             "- <b>Crypto grade (40 rounds):</b> Probability of composite(approx 1 in 10^24)<br>" +
             "Crypto grade is recommended for cryptographic applications (RSA, Diffie-Hellman, etc.).<br><br>" ;
-        this.infoURL = "https://wikipedia.org/wiki/Miller%E2%80%93Rabin_primality_test";
+        this.infoURL = "https://wikipedia.org/wiki/Miller-Rabin_primality_test";
         this.inputType = "string";
         this.outputType = "string";
         this.args = [
