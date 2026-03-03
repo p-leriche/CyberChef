@@ -1,0 +1,163 @@
+/**
+ * Text/Integer Converter tests.
+ *
+ * @author p-leriche [philip.leriche@cantab.net]
+ *
+ * @copyright Crown Copyright 2025
+ * @license Apache-2.0
+ */
+import TestRegister from "../../lib/TestRegister.mjs";
+
+TestRegister.addTests([
+    {
+        name: "Text/Integer Converter: quoted string to decimal",
+        input: "\"ABC\"",
+        expectedOutput: "4276803",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["Decimal"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: quoted string to hexadecimal",
+        input: "\"ABC\"",
+        expectedOutput: "0x414243",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["Hexadecimal"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: single quoted string to decimal",
+        input: "'Hello'",
+        expectedOutput: "310939249775",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["Decimal"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: decimal to string",
+        input: "4276803",
+        expectedOutput: "ABC",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["String"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: hexadecimal to string",
+        input: "0x48656C6C6F",
+        expectedOutput: "Hello",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["String"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: round-trip string.decimal.string",
+        input: "\"Test\"",
+        expectedOutput: "Test",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["Decimal"],
+            },
+            {
+                op: "Text/Integer Converter",
+                args: ["String"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: round-trip string.hex.string",
+        input: "\"CyberChef\"",
+        expectedOutput: "CyberChef",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["Hexadecimal"],
+            },
+            {
+                op: "Text/Integer Converter",
+                args: ["String"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: unquoted text to decimal",
+        input: "Hi",
+        expectedOutput: "18537",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["Decimal"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: single character",
+        input: "\"A\"",
+        expectedOutput: "65",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["Decimal"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: hex to decimal conversion",
+        input: "0xFF",
+        expectedOutput: "255",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["Decimal"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: decimal to hex conversion",
+        input: "255",
+        expectedOutput: "0xff",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["Hexadecimal"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: large number to string",
+        input: "123456789012345678901234567890",
+        expectedOutput: "aUV[ò\u0006.]Ò",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["String"],
+            },
+        ],
+    },
+    {
+        name: "Text/Integer Converter: whitespace handling (quoted)",
+        input: "\"  test  \"",
+        expectedOutput: "465976312693620",
+        recipeConfig: [
+            {
+                op: "Text/Integer Converter",
+                args: ["Decimal"],
+            },
+        ],
+    },
+]);
