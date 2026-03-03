@@ -15,7 +15,7 @@ TestRegister.addTests([
         expectedOutput: "4276803",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["Decimal"],
             },
         ],
@@ -26,7 +26,7 @@ TestRegister.addTests([
         expectedOutput: "0x414243",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["Hexadecimal"],
             },
         ],
@@ -37,7 +37,7 @@ TestRegister.addTests([
         expectedOutput: "310939249775",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["Decimal"],
             },
         ],
@@ -48,7 +48,7 @@ TestRegister.addTests([
         expectedOutput: "ABC",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["String"],
             },
         ],
@@ -59,7 +59,7 @@ TestRegister.addTests([
         expectedOutput: "Hello",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["String"],
             },
         ],
@@ -70,11 +70,11 @@ TestRegister.addTests([
         expectedOutput: "Test",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["Decimal"],
             },
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["String"],
             },
         ],
@@ -85,11 +85,11 @@ TestRegister.addTests([
         expectedOutput: "CyberChef",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["Hexadecimal"],
             },
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["String"],
             },
         ],
@@ -100,7 +100,7 @@ TestRegister.addTests([
         expectedOutput: "18537",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["Decimal"],
             },
         ],
@@ -121,7 +121,7 @@ TestRegister.addTests([
         expectedOutput: "255",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["Decimal"],
             },
         ],
@@ -132,7 +132,7 @@ TestRegister.addTests([
         expectedOutput: "0xff",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["Hexadecimal"],
             },
         ],
@@ -143,7 +143,7 @@ TestRegister.addTests([
         expectedOutput: "aUV[ò\u0006.]Ò",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["String"],
             },
         ],
@@ -154,7 +154,7 @@ TestRegister.addTests([
         expectedOutput: "465976312693620",
         recipeConfig: [
             {
-                op: "Text-Integer Conversion
+                op: "Text-Integer Conversion"
                 args: ["Decimal"],
             },
         ],
