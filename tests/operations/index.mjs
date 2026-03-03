@@ -113,7 +113,7 @@ import "./tests/Media.mjs";
 import "./tests/MIMEDecoding.mjs";
 import "./tests/Modhex.mjs";
 import "./tests/ModularExponentiation.mjs";
-import "./tests/ModularInversse.mjs";
+import "./tests/ModularInverse.mjs";
 import "./tests/MorseCode.mjs";
 import "./tests/MS.mjs";
 import "./tests/MultipleBombe.mjs";
