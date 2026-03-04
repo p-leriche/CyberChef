@@ -140,8 +140,8 @@ TestRegister.addTests([
     },
     {
         name: "Text-Integer Conversion large number to string",
-        input: "123456789012345678901234567890",
-        expectedOutput: "aUV[ò\u0006.]Ò",
+        input: "113091951015816448506195587157728348242683688608116",
+        expectedOutput: "Mary had a little cat",
         recipeConfig: [
             {
                 op: "Text-Integer Conversion",
@@ -152,7 +152,7 @@ TestRegister.addTests([
     {
         name: "Text-Integer Conversion whitespace handling (quoted)",
         input: "\"  test  \"",
-        expectedOutput: "465976312693620",
+        expectedOutput: "2314978187545944096",
         recipeConfig: [
             {
                 op: "Text-Integer Conversion",

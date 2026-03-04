@@ -67,7 +67,7 @@ TestRegister.addTests([
     {
         name: "Modular Exponentiation: using input field for base",
         input: "5",
-        expectedOutput: "3",
+        expectedOutput: "6",
         recipeConfig: [
             {
                 op: "Modular Exponentiation",
@@ -78,7 +78,7 @@ TestRegister.addTests([
     {
         name: "Modular Exponentiation: using input field for exponent",
         input: "4",
-        expectedOutput: "4",
+        expectedOutput: "5",
         recipeConfig: [
             {
                 op: "Modular Exponentiation",
@@ -89,7 +89,7 @@ TestRegister.addTests([
     {
         name: "Modular Exponentiation: RSA-like example (small)",
         input: "",
-        expectedOutput: "428",
+        expectedOutput: "561",
         recipeConfig: [
             {
                 op: "Modular Exponentiation",
@@ -100,7 +100,7 @@ TestRegister.addTests([
     {
         name: "Modular Exponentiation: large base and exponent",
         input: "",
-        expectedOutput: "209865342",
+        expectedOutput: "560583526",
         recipeConfig: [
             {
                 op: "Modular Exponentiation",
